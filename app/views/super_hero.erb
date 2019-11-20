@@ -1,1 +1,66 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Create a Team and Heroes!</h1>
+    <br>
+    <b>
+    <form action="/teams" method="post">
+    <label for="">Team Name:</label>
+    <input  type="text" name="team[name]">
+    <br>
+    <label for="">Team Motto:</label>
+    <input  type="text" name="team[motto]">
+    <br>
+    </b>
+    <h2>Hero 1</h2>
+    <br>
+    <b>
+    <label for="">Hero's Name:</label>
+    <input id="member1_name" type="text" name="team[heroes][][name]">
+    <br>
+    <label for="">Hero's Power:</label>
+    <input  id="member1_power" type="text" name="team[heroes][][power]">
+    <br>
+    <label for="">Hero's Biography:</label>
+    <input  id="member1_bio" type="text" name="team[heroes][][biography]">
+    <br>
+    </b>
+      <h2>Hero 2</h2>
+    <br>
+    <b>
+    <label for="">Hero's Name:</label>
+    <input  id="member2_name" type="text" name="team[heroes][][name]">
+    <br>
+    <label for="">Hero's Power:</label>
+    <input  id="member2_power" type="text" name="team[heroes][][power]">
+    <br>
+    <label for="">Hero's Biography:</label>
+    <input  id="member2_bio" type="text" name="team[heroes][][biography]">
+    <br>
+    </b>
+    <h2>Hero 3</h2>
+    <br>
+    <b>
+    <label for="">Hero's Name:</label>
+    <input  id="member3_name" type="text" name="team[heroes][][name]">
+    <br>
+    <label for="">Hero's Power:</label>
+    <input  id="member3_power" type="text" name="team[heroes][][power]">
+    <br>
+    <label for="">Hero's Biography:</label>
+    <input  id="member3_bio" type="text" name="team[heroes][][biography]">
+    <br>
+    </b>
+    <br>
+    <input type="submit" name="submit" value="submit">
+</form>
+</body>
+</html>
